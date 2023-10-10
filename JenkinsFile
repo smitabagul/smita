@@ -3,11 +3,11 @@ pipeline
   agent any
   stages
   {  
-      stage('Build')
+      stage('Development')
       {
           steps
           {
-              echo "This is build stage"
+              echo "This is devemlopment stage"
           }
       }
       stage('test')
@@ -17,11 +17,11 @@ pipeline
             echo "This is test stage"
         }
       }
-      stage('Deploy')
+      stage('connect')
       {
         steps
         {
-            echo "This is deply stage"
+            echo "This is connecting stage"
         }
       }
   }
