@@ -7,21 +7,21 @@ pipeline
       {
           steps
           {
-              //
+              echo "This is build stage"
           }
       }
       stage('test')
       {
         steps
         {
-            //
+            echo "This is test stage"
         }
       }
       stage('Deploy')
       {
         steps
         {
-            //
+            echo "This is deply stage"
         }
       }
   }
